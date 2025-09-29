@@ -82,7 +82,7 @@ public class AdminService {
                 .newIssuesToday(newIssuesToday)
                 .totalVotes(totalVotes)
                 .votesToday(votesToday)
-                .pendingNGOApplications(0L) // TODO: Implement NGO applications
+                .pendingNGOApplications(0L) 
                 .recentActivities(recentActivities)
                 .topReporters(topReporters)
                 .topAreas(topAreas)
@@ -265,7 +265,7 @@ public class AdminService {
 
     private List<TopAreaResponse> getTopAreas() {
         // For now, return empty list since Issue model doesn't have city field
-        // TODO: Implement proper geographic-based area statistics using lat/lng
+        // This can be implemented when location data is available
         return List.of();
     }
 

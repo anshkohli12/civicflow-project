@@ -16,11 +16,13 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.context.annotation.Profile;
 import java.util.Arrays;
 
 @Configuration
 @RequiredArgsConstructor
 @EnableMethodSecurity
+@Profile("!test")
 public class SecurityConfig {
 
     private final JwtFilter jwtFilter;

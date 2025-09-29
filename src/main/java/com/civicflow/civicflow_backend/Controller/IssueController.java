@@ -119,7 +119,7 @@ public class IssueController {
         String imageUrl = "/api/files/images/" + fileName;
         
         // Update the issue with the image URL
-        Issue updatedIssue = issueService.updateIssueImage(id, imageUrl, currentUser);
+        issueService.updateIssueImage(id, imageUrl, currentUser);
         
         // Return response with image URL
         Map<String, String> response = new HashMap<>();
